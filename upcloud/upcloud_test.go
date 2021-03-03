@@ -6,7 +6,6 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/nanovms/ops/lepton"
 	"github.com/nanovms/ops/mock_upcloud"
 	"github.com/nanovms/ops/upcloud"
 	"github.com/stretchr/testify/assert"
@@ -100,8 +99,4 @@ func NewProvider(t *testing.T) (*upcloud.Provider, *mock_upcloud.MockService) {
 	service := mock_upcloud.NewMockService(ctrl)
 
 	return upcloud.NewProviderWithService(service), service
-}
-
-func NewMockContext() *lepton.Context {
-	return lepton.NewContext(types.NewConfig())
 }

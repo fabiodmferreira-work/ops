@@ -69,7 +69,7 @@ func (op *OnPrem) DeleteVolume(ctx *lepton.Context, name string) error {
 // label can refer to volume UUID or volume label
 func (op *OnPrem) AttachVolume(ctx *lepton.Context, image, name, mount string) error {
 	fmt.Println("not implemented")
-	fmt.Println("use <ops run> or <ops load> with --mounts flag instead")
+	fmt.Println("use <ops run> or <ops pkg load> with --mounts flag instead")
 	fmt.Println("alternatively, use <ops image create -t onprem> with --mounts flag")
 	fmt.Println("and run it with <ops instance create -t onprem>")
 	return nil

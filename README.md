@@ -8,7 +8,7 @@
   <img src="https://i.imgur.com/OtfAABU.png" style="width:200px;"/>
 </p>
 
-Ops is a tool for creating and running a [Nanos](https://github.com/nanovms/nanos) unikernel. It is used to 
+Ops is a tool for creating and running a [Nanos](https://github.com/nanovms/nanos) unikernel. It is used to
 package, create and run your application as a [nanos](https://github.com/nanovms/nanos) unikernel instance.
 
 Check out the [DOCS](https://nanovms.gitbook.io/ops/)
@@ -44,9 +44,9 @@ osx notes:
 ```
 GO111MODULE=on go build -ldflags "-w"
 ```
- 
+
 For [detailed instructions](https://nanovms.gitbook.io/ops/developer/prerequisites) please consult the documentation.
-    
+
 # Basic usage examples
 
 Before learning more about `ops` it is a good idea to see some basic usage
@@ -70,7 +70,7 @@ console.log('Server running at http://127.0.0.1:8083/');
 Then you can run it like so:
 
 ```bash
-ops load node_v11.5.0 -p 8083 -f -n -a hi.js
+ops pkg load node_v11.5.0 -p 8083 -f -n -a hi.js
 ```
 
 Want to push your app out to the cloud?
@@ -125,7 +125,7 @@ ops pkg list
 
 # Example config file
 
-ops config files are plain JSON, below is an example 
+ops config files are plain JSON, below is an example
 
 ```JSON
   {
